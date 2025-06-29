@@ -1,34 +1,31 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="bn">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Secure PDF Viewer</title>
+  <title>PDF Viewer</title>
   <style>
     body { font-family: sans-serif; margin: 2rem; }
     #login { display: block; }
     #viewer { display: none; height: 90vh; }
     input { padding: 8px; font-size: 16px; }
-    button { padding: 8px 12px; font-size: 16px; }
+    button { padding: 8px 12px; font-size: 16px; cursor: pointer; }
     iframe { width: 100%; height: 100%; border: none; }
+    #message { margin-top: 10px; color: red; }
   </style>
 </head>
 <body>
-  <h2>🔐 পাসওয়ার্ড দিন PDF দেখার জন্য</h2>
+  <h2>🔐 পিডিএফ দেখার জন্য পাসওয়ার্ড দিন</h2>
   <div id="login">
     <input type="password" id="password" placeholder="পাসওয়ার্ড লিখুন" />
     <button onclick="checkPassword()">দেখাও</button>
-    <p id="message" style="color: red;"></p>
-  </div>
-  <div id="viewer">
+    <p id="message"></p>
+  </div>  <div id="viewer">
     <iframe id="pdfFrame"></iframe>
   </div>  <script>
-    // ডেমো: পাসওয়ার্ড অটো জেনারেটেড, সেভ করা
     const validPasswords = {
-      "P3X7A9": "PDF/cheenk-ke-adaab.pdf",
-      // ভবিষ্যতে আরও পিডিএফ ও পাসওয়ার্ড এখানে যোগ করা যাবে
+      "P3X7A9": "PDF/cheenk-ke-adaab.pdf"
     };
 
-    // ডিভাইস ফিঙ্গারপ্রিন্টিং (সরল উদাহরণ, বাস্তবে JS Lib লাগে)
     function getDeviceID() {
       return navigator.userAgent + screen.width + screen.height;
     }
