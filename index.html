@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure PDF Viewer</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    #login { display: block; }
+    #viewer { display: none; height: 90vh; }
+    input { padding: 8px; font-size: 16px; }
+    button { padding: 8px 12px; font-size: 16px; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  <h2>🔐 পাসওয়ার্ড দিন PDF দেখার জন্য</h2>
+  <div id="login">
+    <input type="password" id="password" placeholder="পাসওয়ার্ড লিখুন" />
+    <button onclick="checkPassword()">দেখাও</button>
+    <p id="message" style="color: red;"></p>
+  </div>
+  <div id="viewer">
+    <iframe id="pdfFrame"></iframe>
+  </div>  <script>
+    // ডেমো: পাসওয়ার্ড অটো জেনারেটেড, সেভ করা
+    const validPasswords = {
+      "P3X7A9": "pdf/cheenk-ke-adaab.pdf",
+      // ভবিষ্যতে আরও পিডিএফ ও পাসওয়ার্ড এখানে যোগ করা যাবে
+    };
+
+    // ডিভাইস ফিঙ্গারপ্রিন্টিং (সরল উদাহরণ, বাস্তবে JS Lib লাগে)
+    function getDeviceID() {
+      return navigator.userAgent + screen.width + screen.height;
+    }
+
+    const usedOnce = {};
+
+    function checkPassword() {
+      const pass = document.getElementById('password').value.trim();
+      const deviceID = getDeviceID();
+
+      if (validPasswords[pass]) {
+        if (usedOnce[pass] && usedOnce[pass] !== deviceID) {
+          document.getElementById('message').innerText = '❌ এই পাসওয়ার্ড ইতিমধ্যেই অন্য ডিভাইসে ব্যবহৃত হয়েছে।';
+          return;
+        }
+
+        usedOnce[pass] = deviceID;
+
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('viewer').style.display = 'block';
+        document.getElementById('pdfFrame').src = validPasswords[pass];
+      } else {
+        document.getElementById('message').innerText = '❌ ভুল পাসওয়ার্ড!';
+      }
+    }
+  </script></body>
+</html>
