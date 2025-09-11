@@ -1,0 +1,99 @@
+﻿Tawkit.net	
+تطبيق أوقات الصلاة
+Prayer Times Application 
+
+Copyright 	Ismail CHAGDALI
+		www.tawkit.net
+		info@tawkit.net
+
+
+شروط الاستعمال
+------------------------
+
+البرنامج مجاني !
+هذا التطبيق وقف لبيوت الله و لا يجوز بيعه .
+لايجوز حذف أو تغيير إسم البرنامج أو المؤلف . 
+لابد بالاحتفاظ بهذا الإشعار القانوني مع البرنامج .  
+يجوز التعديل على التطبيق  للاستخدام الشخصي فقط , لا لنشره متغيرا .
+
+للتجارة في الأجهزة الحاملة للبرنامج :
+يجوز للتاجر الربح إلى 50% كأقصى حد من قيمة الجهاز و ملحقاته ، مع التركيب و الصيانة !
+مثال :
+صاحب الجهاز عنده جهاز كلفه  100 ريال ،
+ يجوز له بيع جهازه لصاحب المسجد ب 150ريال كأقصى ثمن ،
+بهذه الشروط الثلاثة :
+
+1.  يخبر  صاحب المسجد أن البرنامج مجاني ، وأنه يبيع له الجهاز مع التركيب و الصيانة .
+2.  أن يقوم بصيانة البرنامج و الجهاز مجانيا عند حدوث أي خلل في تشغيل الجهاز :
+( إعادة تشغيل الجهاز، ضبط الساعة , المساعدة على استخدام البرنامج ... )
+3.  عدم تغيير البرنامج ، لا يجوز حذف أو إخفاء إسم البرنامج .
+
+
+التركيب :
+قد يكون مجانيا أو بأجرة.
+يتفق صاحب التركيب مع مدير المسجد على مبلغ مناسب 
+
+
+
+LICENSE : 
+------------------------
+
+- Tawkit application is 100% freeware and it is not permissible to sell it.
+- It is not permissible to delete or change the name of the application or the author.
+- This legal notice must be kept with the application.
+- It is permissible to modify the application for a personal use only,
+  not allowed to distribute a modified version of it.
+
+It is allowed to sell devices containing Tawkit application, 
+if the profit is 50% maximum of the value of the device and its accessories, including installation and maintenance!
+
+Example :
+The seller has a device that cost him 100$, 
+it is permissible for him to sell his device to a Mosque 
+for 150$ as a maximum price with these THREE CONDITIONS :
+
+1. The seller must tell the Mosque administrator that the program is free, and that he sells the device with installation and maintenance.
+
+2. The seller must maintain the device and application for free when any defect occurs : 
+   Restart the device and application, setting the device clock, helping using the application, etc ...
+
+3. It's not allowed to change the application, and not permissible to delete or hide application name.
+
+
+
+Installation without selling any device :
+It could be for free or paid. 
+The installer shouldn't fix a price for the installation.
+It agrees with the Mosque's manager on an appropriate amount.
+
+
+
+লাইসেন্স :
+------------------
+
+- Tawkit অ্যাপ্লিকেশন সম্পূর্ণ ফ্রিওয়্যার এবং এটি বিক্রি করা বৈধ নয়।
+- অ্যাপ্লিকেশন বা লেখকের নাম মুছে ফেলা বা পরিবর্তন করা বৈধ নয়।
+- এই আইনগত নোটিশ অবশ্যই অ্যাপ্লিকেশনের সাথে রাখতে হবে।
+- কেবলমাত্র ব্যক্তিগত ব্যবহারের জন্য অ্যাপ্লিকেশন পরিবর্তন করা যেতে পারে, তবে পরিবর্তিত সংস্করণ বিতরণ করা যাবে না।
+
+Tawkit অ্যাপ্লিকেশনসহ ডিভাইস বিক্রি করা যাবে,
+তবে ডিভাইস ও এর আনুষঙ্গিক জিনিসপত্র (ইনস্টলেশন ও মেইনটেন্যান্স সহ) মোট খরচের উপর সর্বোচ্চ ৫০% মুনাফা নেওয়া যাবে।
+
+উদাহরণ :
+একজন বিক্রেতার কাছে একটি ডিভাইস আছে যার দাম পড়েছে ১০০$,
+তাহলে তিনি মসজিদে সেটি সর্বোচ্চ ১৫০$ দামে বিক্রি করতে পারবেন, তবে এই তিনটি শর্তে :
+
+1. বিক্রেতাকে মসজিদের দায়িত্বপ্রাপ্ত ব্যক্তিকে জানাতে হবে যে প্রোগ্রামটি ফ্রি, আর তিনি শুধু ডিভাইস, ইনস্টলেশন ও মেইনটেন্যান্সসহ বিক্রি করছেন।
+
+2. কোনো সমস্যা হলে বিক্রেতাকে ডিভাইস ও অ্যাপ্লিকেশন ফ্রি সার্ভিস দিতে হবে :
+যেমন— ডিভাইস ও অ্যাপ্লিকেশন রিস্টার্ট করা, ডিভাইসের সময় সেট করা, অ্যাপ্লিকেশন ব্যবহারে সাহায্য করা ইত্যাদি।
+
+3. অ্যাপ্লিকেশন পরিবর্তন করা যাবে না, এবং এর নাম মুছে ফেলা বা লুকানো যাবে না।
+
+কোনো ডিভাইস বিক্রি না করে শুধু ইনস্টলেশন :
+
+এটা ফ্রি অথবা পেইড উভয়ভাবে হতে পারে।
+কিন্তু ইনস্টলার নির্দিষ্ট কোনো মূল্য ধার্য করতে পারবে না।
+বরং মসজিদের দায়িত্বপ্রাপ্ত ব্যক্তির সাথে আলোচনা করে উপযুক্ত পরিমাণে সম্মত হতে হবে।
+
+
