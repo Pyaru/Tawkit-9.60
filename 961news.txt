@@ -1,0 +1,44 @@
+Tawkit version 9.61
+-------------------------------
+The most important changes in this version:
+- Android application (with internal Gecko Browser) now available for new and old Android devices (android 5,6,7,8,9,9,10,11,12,13,14/...)
+- Navigation on TV with remote control with virtual mouse (Android apk version)
+- Fixed weather next to prayers
+- Fixed Friday name instead of Dohr on Jomoa
+- Option to turn on/off the sound On Jomoa Azan
+- Fixed the name of Muharram
+- Fixed Azkar screens that were interfering with main screen
+- Added stc font for numbers and clock
+- Added foda font for Azkar
+- Fixed problem of the slideshow duration
+- Option to customise the duration of the slideshow
+- Option to customise how long the home screen appears when playing slides
+- Change the lists of countries, cities and fixed times for prayers and Jomoa
+- Now Hijri date modification in settings-defaults.js file
+
+
+
+
+
+
+
+Tawkit সংস্করণ 9.61
+--------------------------
+এই সংস্করণের সবচেয়ে গুরুত্বপূর্ণ পরিবর্তনসমূহ :
+
+- অ্যান্ড্রয়েড অ্যাপ্লিকেশন (ইন্টারনাল Gecko ব্রাউজারসহ) এখন নতুন ও পুরোনো অ্যান্ড্রয়েড ডিভাইসের জন্য উপলব্ধ (Android 5,6,7,8,9,10,11,12,13,14/...)
+- টিভিতে নেভিগেশন রিমোট কন্ট্রোল দিয়ে ভার্চুয়াল মাউস ব্যবহার করে (Android apk ভার্সন)
+- নামাজের পাশে আবহাওয়ার সমস্যা সমাধান
+- জুমার দিনে Dohr-এর পরিবর্তে Friday নাম ঠিক করা হয়েছে
+- জুমার আজান-এর সময় সাউন্ড অন/অফ করার অপশন যুক্ত করা হয়েছে
+- মহররম মাসের নাম সংশোধন করা হয়েছে
+- আজকার স্ক্রিনের সমস্যা (যা মেইন স্ক্রিনে হস্তক্ষেপ করছিল) সমাধান করা হয়েছে
+- সংখ্যার ও ঘড়ির জন্য stc ফন্ট যুক্ত করা হয়েছে
+- আজকার জন্য foda ফন্ট যুক্ত করা হয়েছে
+- স্লাইডশোর সময়কাল সম্পর্কিত সমস্যা সমাধান করা হয়েছে
+- স্লাইডশোর সময়কাল নিজস্বভাবে নির্ধারণের অপশন যোগ করা হয়েছে
+- স্লাইড চালানোর সময় হোম স্ক্রিন কতক্ষণ থাকবে তা নির্ধারণের অপশন যুক্ত হয়েছে
+- দেশ, শহর ও নামাজ ও জুমার নির্দিষ্ট সময়ের তালিকা পরিবর্তন ও সংশোধন করা হয়েছে
+- এখন থেকে Hijri তারিখ পরিবর্তন করা যাবে settings-defaults.js ফাইল থেকে
+
+
