@@ -18,7 +18,7 @@
 	MenuLocation		: "মসজিদের অবস্থান",
 	MenuHijriClick		: "হিজরি তারিখ ঠিক করুন",
 	MenuThemes			: "ওয়ালপেপার পরিবর্তন করুন",
-	MenuOptions			: "বিকল্প",
+	MenuOptions			: "বেসিক সেটিংস / অপশন",
 	MenuAzkar			: "ছবি প্রদর্শন (যিকির)",
 	MenuSliders			: "স্লাইড শো করুন",
 	MenuAdjustments		: "নামাজের সময় অ্যাডজাস্ট করুন",
