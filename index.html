@@ -5542,7 +5542,7 @@ function W09140361(nbr)
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter Theme Number for : "+W09149861[nbr], W09135861[nbr], 'W09140361('+nbr+')', true);
+W09159661(W09149861[nbr] + " এর জন্য থিম নম্বর লিখুন", W09135861[nbr], 'W09140361('+nbr+')', true);
  return;
  }
 
@@ -5579,7 +5579,7 @@ function W09198361(nbr)
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter Theme number for : "+W09149961[nbr], W09135961[nbr], 'W09198361('+nbr+')', true);
+W09159661(W09149961[nbr] + " এর জন্য থিম নম্বর লিখুন", W09135961[nbr], 'W09198361('+nbr+')', true);
  return;
  }
  
@@ -5620,7 +5620,7 @@ function W09156161()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter the numbers of Themes you like <br>(numbers separated by comma)", W09136061.toString(), 'W09156161()', true);
+ W09159661("আপনার পছন্দের থিমের নাম্বারটি লিখুন<br>(প্রত্যেক নাম্বারের পর কমা ব্যবহার করুন। উদাহরণ: 5,8,9)", W09136061.toString(), 'W09156161()', true);
  return;
  }
  
@@ -5646,7 +5646,7 @@ function W09165961()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Alert Before Iqama :", JS_DATA.ucCloseMobilePlease, 'W09165961()', false);
+ W09159661("ইকামার পূর্বের সতর্কতা :", JS_DATA.ucCloseMobilePlease, 'W09165961()', false);
  return;
  }
  
@@ -5753,7 +5753,7 @@ function W09166761()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter Dohr-Azan, X-minutes before Asr<br>(enter 0 to disable)", JS_DATA.ucDohrXminutesAsr, 'W09166761()', true);
+ W09159661("আসরের কত মিনিট আগে যোহরের আযান হবে তা নির্ধারণ করুন<br>বন্ধ রাখতে ০ (শূন্য) লিখুন", JS_DATA.ucDohrXminutesAsr, 'W09166761()', true);
  return;
  }
 
@@ -5779,7 +5779,7 @@ function W09157561()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("(وقت الأذان الأول) Enter minutes before Fajr<br>(enter 0 to disable)", JS_DATA.ucPrimaryAzanMinutes, 'W09157561()', true);
+ W09159661("ফজরের পূর্বে কত মিনিট রাখতে চান?<br>বন্ধ রাখতে ০ (শূন্য) লিখুন", JS_DATA.ucPrimaryAzanMinutes, 'W09157561()', true);
  return;
  }
 
@@ -5951,7 +5951,7 @@ function W09141161()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter your message. اكتب إعلانك ", "", 'W09141161()', false);
+ W09159661("আপনার অ্যানাউন্সমেন্ট লিখুন :", "", 'W09141161()', false);
  return;
  }
 
@@ -5991,7 +5991,7 @@ function W09208061()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter your slide message here<br>or add picture file name (.jpg)", "", 'W09208061()', false);
+ W09159661("আপনার স্লাইড বার্তা এখানে লিখুন<br>অথবা ছবির ফাইলের নাম (.jpg) যোগ করুন", "", 'W09208061()', false);
  return;
  }
 
@@ -6188,9 +6188,9 @@ function W09161761(itm)
 {
  let xARR = JS_BOTTOM_MSGS[itm].split("|");
 
- let strCHS  = "Choose EXACTLY one of these days. اختر من هذه الأيام  :<br>";
+ let strCHS  = "এই দিনগুলির মধ্যে থেকে যেকোন একটি বেছে নিন :<br><br>";
  strCHS += "JOMOA . SATURDAY . SUNDAY . MONDAY . TUESDAY . WEDNESDAY . THURSDAY <br><br>";
- strCHS += "If you want your message to appear on a special HIJRI date (eg: 27th Ramadan), enter : 09/27 <br><br>";
+ strCHS += "যদি আপনি চান যে আপনার বার্তাটি একটি বিশেষ হিজরী তারিখে প্রদর্শিত হোক (যেমন: ২৭তম রমজান), তাহলে এভাবে লিখুন : 09/27<br>";
 
  
  if(!W09138061)
@@ -8374,7 +8374,7 @@ function W09177561()
  {
  W09130561 = "";
  W09138061 = false;
- W09159661("Enter Your GPS Position", sNowGps, 'W09177561()', true);
+ W09159661("আপনার GPS অবস্থান লিখুন", sNowGps, 'W09177561()', true);
  return;
  }
 
