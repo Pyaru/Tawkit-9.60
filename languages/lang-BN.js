@@ -29,7 +29,7 @@
 	MenuGoMobile		: "মোবাইল অ্যাপ্লিকেশন",
 	XX_OPTION_9			: "Tawkit সম্পর্কে",
 
-	XXDoaAzanIqama		: "আযান ও ইকামতের মাঝের কবুল দোয়া হয়।",
+	XXDoaAzanIqama		: "আযান ও ইকামতের মাঝের দোয়া কবুল হয়।",
 	XXFastingMonday		: "সোমবার রোজা রাখতে ভুলবেন না",
 	XXFastingThursday	: "বৃহস্পতিবার রোজা রাখতে ভুলবেন না",
 	
