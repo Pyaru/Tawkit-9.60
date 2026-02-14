@@ -8766,10 +8766,10 @@ W09128161();
 
 // গিটহাব থেকে লাইভ নোটিশ চেক করার ফাংশন
 function checkOnlineUpdates() {
-    // এখানে আপনার GitHub Raw ফাইলের লিংকটি দিন
+    // আপনার গিটহাব লিংক
     const jsonUrl = 'https://raw.githubusercontent.com/Pyaru/Tawkit-9.60/refs/heads/main/online_notice.json';
 
-    // ক্যাশ সমস্যা এড়াতে লিংকের শেষে সময় যোগ করা হয়েছে (?t=...)
+    // ক্যাশ সমস্যা এড়াতে লিংকের শেষে সময় যোগ করা হয়েছে
     fetch(jsonUrl + '?t=' + new Date().getTime())
     .then(response => {
         if (!response.ok) {
@@ -8784,24 +8784,48 @@ function checkOnlineUpdates() {
             // ১. নিচের স্ক্রলিং মেসেজ (Marquee) আপডেট করা
             if(data.marquee_msg && data.marquee_msg !== "") {
                 // অ্যাপের ভেরিয়েবল আপডেট করা হচ্ছে
-                // "1|DAILY|" হলো এই অ্যাপের মেসেজ ফরম্যাট
-                JS_BOTTOM_MSGS.unshift("1|DAILY|" + data.marquee_msg);
+                // খেয়াল রাখবেন, আগের মেসেজ মুছছি না, শুধু নতুনটা যোগ করছি
                 
-                // মেসেজ রিফ্রেশ করার ফাংশন কল (আপনার অ্যাপের ফাংশন)
-                W09135161(); 
+                // ডুপ্লিকেট এড়াতে চেক করে নিচ্ছি এই মেসেজটা আগে আছে কিনা
+                let isMsgExist = false;
+                for(let i=0; i<JS_BOTTOM_MSGS.length; i++) {
+                    if(JS_BOTTOM_MSGS[i].includes(data.marquee_msg)) {
+                        isMsgExist = true;
+                        break;
+                    }
+                }
+
+                if(!isMsgExist) {
+                    JS_BOTTOM_MSGS.unshift("1|DAILY|" + data.marquee_msg);
+                    // মেসেজ রিফ্রেশ করার ফাংশন কল
+                    W09135161(); 
+                }
             }
 
-            // ২. স্লাইড শো আপডেট করা
+            // ২. স্লাইড শো আপডেট করা (ডুপ্লিকেট চেকসহ)
             if(data.slides && data.slides.length > 0) {
-                // স্লাইড ডাটা আপডেট
-                JS_SLIDES_DATA = data.slides;
-                // স্লাইড সেভ করার ফাংশন (আপনার অ্যাপের ফাংশন)
-                W09129661(); 
+                
+                let slideChanged = false;
+
+                // লুপ চালিয়ে প্রতিটি অনলাইন স্লাইড চেক করা হচ্ছে
+                data.slides.forEach(function(newSlide) {
+                    // চেক করি এই স্লাইডটি আগে থেকেই আছে কিনা
+                    if (!JS_SLIDES_DATA.includes(newSlide)) {
+                        // যদি না থাকে, তবে স্লাইড লিস্টের শুরুতে যোগ করি
+                        JS_SLIDES_DATA.unshift(newSlide);
+                        slideChanged = true;
+                    }
+                });
+
+                // যদি নতুন কোনো স্লাইড অ্যাড হয়, তখনই কেবল সেভ করব
+                if(slideChanged) {
+                    W09129661(); 
+                    console.log("Online Slides Added");
+                }
             }
         }
     })
     .catch(error => {
-        // ইন্টারনেট না থাকলে বা এরর হলে এখানে আসবে (কিছু করার দরকার নেই)
         console.log('Offline mode or GitHub Error: ', error);
     });
 }
@@ -8809,8 +8833,8 @@ function checkOnlineUpdates() {
 // অ্যাপ চালু হওয়ার ১০ সেকেন্ড পর চেক করবে
 setTimeout(checkOnlineUpdates, 10000);
 
-// প্রতি ১০ মিনিট পর পর অটোমেটিক চেক করবে (মসজিদে ইন্টারনেট থাকলে আপডেট হয়ে যাবে)
-setInterval(checkOnlineUpdates, 600000); 
+// প্রতি ১০ মিনিট পর পর অটোমেটিক চেক করবে
+setInterval(checkOnlineUpdates, 600000);
 	
 </script>
 </body>
