@@ -8785,8 +8785,7 @@ function checkOnlineUpdates() {
             if(data.marquee_msg && data.marquee_msg !== "") {
                 // অ্যাপের ভেরিয়েবল আপডেট করা হচ্ছে
                 // "1|DAILY|" হলো এই অ্যাপের মেসেজ ফরম্যাট
-                JS_BOTTOM_MSGS = []; // আগের সব মেসেজ ক্লিয়ার করে দিলাম (চাইলে এই লাইন বাদ দিতে পারেন)
-                JS_BOTTOM_MSGS.push("1|DAILY|" + data.marquee_msg);
+                JS_BOTTOM_MSGS.unshift("1|DAILY|" + data.marquee_msg);
                 
                 // মেসেজ রিফ্রেশ করার ফাংশন কল (আপনার অ্যাপের ফাংশন)
                 W09135161(); 
